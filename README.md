@@ -1,4 +1,8 @@
-1. **Road-trip-api: Backend Setup**
+# RoadTrip
+## Software Engineering II
+This group project is a full-stack road-trip application.
+
+**Road-trip-api: Backend Setup**
 
 	- Install Java 17([OpenJDK](https://www.oracle.com/java/technologies/downloads/))
 	- Install Docker:
@@ -46,7 +50,7 @@
               - GET localhost:8080/ping
               - **pong!**
 
-2. **road-trip-frontend: Frontend Setup**
+4. **road-trip-frontend: Frontend Setup**
 
 	- Install VSCode: https://code.visualstudio.com/Download
 	- Install Node.js: https://nodejs.org/en/download/
@@ -59,7 +63,7 @@
 		- Finally: `yarn dev`
 	- Navigate to http://localhost:3000 - you should see the road trip application
 
-3. **CI/CD Setup**
+4. **CI/CD Setup**
 
 	- Setup an account with GCP if you don't already have one.
 	- Create a Linux VM in GCP: This will be your production server.
