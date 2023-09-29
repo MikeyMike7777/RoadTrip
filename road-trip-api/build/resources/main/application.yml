@@ -1,0 +1,26 @@
+server:
+  port : 8080
+spring:
+  datasource:
+    url: jdbc:mysql://172.21.0.2:3306/road-trip?createDatabaseIfNotExist=true
+    username: user
+    password: password
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  mail:
+    port: 587
+    username: BaylorSpringPotatoes@hotmail.com
+    password: 6pvSX9wAQWT7DrW
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+api:
+  maps:
+    key: AIzaSyBsmY_kL7GOuZjqfkR-jYj6BFMTOwiZPs0
+  yelp:
+    key: OF6RfEU09bhwKQg_IIHl9tPH3qKqzdLl0CHNVnbD6C8AZryq-vvTQofhii9wCQaxHvQuDiMDSM_b425m7n1jYetU6Ydm4wq-BEY5GdJ0ua_FkgrAOlaF560ao0ckZHYx
