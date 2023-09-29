@@ -1,0 +1,106 @@
+/* Notification Items */
+.notification-wrapper{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    width: 300px;
+}
+
+.notification-item{
+    padding: 5px;
+    background-color: #fff0e7;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    animation: SlideLeft 0.4s;
+    animation-fill-mode: forwards;
+    width: 300px;
+}
+
+/* Notification Box Animations */
+@keyframes SlideLeft{
+    0% {
+        margin-left:120%;
+    }
+
+    100%{
+        margin-left: 0%;
+    }
+}
+
+@keyframes SlideRight{
+    0% {
+        margin-left:0%;
+    }
+
+    100%{
+        margin-left: 120%;
+    }
+}
+
+.notification-item.exit {
+    animation: SlideRight 0.4s;
+    animation-fill-mode: forwards;
+}
+
+/* Notification Box Items and Statuses*/
+.notification-item p{
+    margin: 0;
+    padding: 10px 0;
+}
+
+.notification-item .bar{
+    height: 10px;
+}
+
+.notification-item.success .bar{
+    height: 10px;
+    background-color: #7fff99;
+}
+
+.notification-item.warning .bar{
+    height: 10px;
+    background-color: rgba(253, 187, 45, 0.68);
+}
+
+.notification-item.error .bar{
+    height: 10px;
+    background-color: tomato;
+}
+
+/* General Styles */
+* {
+    box-sizing: border-box;
+}
+
+/* body styles */
+.body{
+    font-family: Georgia, serif;
+    text-align: center;
+}
+
+/* header styles */
+.header {
+    background-color: #f1f1f1;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+}
+
+/* column styles */
+.column {
+    background-color:#bbb;
+    padding: 30px;
+}
+
+/* middle styles */
+.middle {
+    width: 50%;
+}
+
+/* button styles */
+.button {
+    font-size: 15px;
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
